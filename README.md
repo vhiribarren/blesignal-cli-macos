@@ -5,10 +5,10 @@ Developed using Swift and XCode as a macOS console app.
 
 Its aim is to follow the signal evolution of a specific device, so it can be used with `grep` or other tools.
 
-1st column: RFC3339 collection date
-2nd column: device ID as defined by macOS, since there is not possibility to display the MAC address.
-3rd column: RSSI, power of the signal, in dBm
-4th column: device name, if there is one.
+1st column: RFC3339 collection date.  
+2nd column: device ID as defined by macOS, since there is not possibility to display the MAC address.  
+3rd column: RSSI, power of the signal, in dBm.  
+4th column: device name, if there is one.  
 
 Example:
 
