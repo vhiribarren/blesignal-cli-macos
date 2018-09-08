@@ -5,8 +5,11 @@ import CoreBluetooth
 class BTScanInteractor : NSObject, CBCentralManagerDelegate{
     
     let centralManager: CBCentralManager
+    let dateFormatter: DateFormatter
     
     override init() {
+        self.dateFormatter = DateFormatter()
+        self.dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
         self.centralManager = CBCentralManager(delegate: nil, queue: nil)
         super.init()
         self.centralManager.delegate = self
@@ -41,7 +44,8 @@ class BTScanInteractor : NSObject, CBCentralManagerDelegate{
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        printStdout("\(peripheral.identifier)\t\(RSSI) dBm\t\(peripheral.name ?? "")")
+        let time = dateFormatter.string(from: Date())
+        printStdout("\(time)\t\(peripheral.identifier)\t\(RSSI)\t\(peripheral.name ?? "")")
     }
     
 }
