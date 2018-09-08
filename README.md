@@ -14,7 +14,7 @@ Third column is the device name, if there is one.
 Example:
 
 
-    $ ./btsignal
+    $ ./blesignal
     -> Ctrl+C to leave
     -> BLE is powered on, starting BLE scan
     78DB2901-FEA0-410A-B79F-3EE6C7E812D4	-90 dBm	

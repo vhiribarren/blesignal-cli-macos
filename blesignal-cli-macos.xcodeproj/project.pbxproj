@@ -25,7 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E2C52A902143B53900C05FC7 /* btsignal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = btsignal; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C52A902143B53900C05FC7 /* blesignal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = blesignal; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C52A932143B53900C05FC7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E2C52A9A2143B58400C05FC7 /* BTScanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTScanInteractor.swift; sourceTree = "<group>"; };
 		E2C52A9C2143B59600C05FC7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		E2C52A872143B53900C05FC7 = {
 			isa = PBXGroup;
 			children = (
-				E2C52A922143B53900C05FC7 /* btsignal-cli-macos */,
+				E2C52A922143B53900C05FC7 /* blesignal-cli-macos */,
 				E2C52A912143B53900C05FC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,27 +53,27 @@
 		E2C52A912143B53900C05FC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2C52A902143B53900C05FC7 /* btsignal */,
+				E2C52A902143B53900C05FC7 /* blesignal */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2C52A922143B53900C05FC7 /* btsignal-cli-macos */ = {
+		E2C52A922143B53900C05FC7 /* blesignal-cli-macos */ = {
 			isa = PBXGroup;
 			children = (
 				E2C52A932143B53900C05FC7 /* main.swift */,
 				E2C52A9A2143B58400C05FC7 /* BTScanInteractor.swift */,
 				E2C52A9C2143B59600C05FC7 /* Utils.swift */,
 			);
-			path = "btsignal-cli-macos";
+			path = "blesignal-cli-macos";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2C52A8F2143B53900C05FC7 /* btsignal-cli-macos */ = {
+		E2C52A8F2143B53900C05FC7 /* blesignal-cli-macos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2C52A972143B53900C05FC7 /* Build configuration list for PBXNativeTarget "btsignal-cli-macos" */;
+			buildConfigurationList = E2C52A972143B53900C05FC7 /* Build configuration list for PBXNativeTarget "blesignal-cli-macos" */;
 			buildPhases = (
 				E2C52A8C2143B53900C05FC7 /* Sources */,
 				E2C52A8D2143B53900C05FC7 /* Frameworks */,
@@ -83,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = "btsignal-cli-macos";
-			productName = "btsignal-cli-macos";
-			productReference = E2C52A902143B53900C05FC7 /* btsignal */;
+			name = "blesignal-cli-macos";
+			productName = "blesignal-cli-macos";
+			productReference = E2C52A902143B53900C05FC7 /* blesignal */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E2C52A8B2143B53900C05FC7 /* Build configuration list for PBXProject "btsignal-cli-macos" */;
+			buildConfigurationList = E2C52A8B2143B53900C05FC7 /* Build configuration list for PBXProject "blesignal-cli-macos" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2C52A8F2143B53900C05FC7 /* btsignal-cli-macos */,
+				E2C52A8F2143B53900C05FC7 /* blesignal-cli-macos */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +252,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				PRODUCT_NAME = btsignal;
+				PRODUCT_NAME = blesignal;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -262,7 +262,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				PRODUCT_NAME = btsignal;
+				PRODUCT_NAME = blesignal;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -270,7 +270,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2C52A8B2143B53900C05FC7 /* Build configuration list for PBXProject "btsignal-cli-macos" */ = {
+		E2C52A8B2143B53900C05FC7 /* Build configuration list for PBXProject "blesignal-cli-macos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2C52A952143B53900C05FC7 /* Debug */,
@@ -279,7 +279,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2C52A972143B53900C05FC7 /* Build configuration list for PBXNativeTarget "btsignal-cli-macos" */ = {
+		E2C52A972143B53900C05FC7 /* Build configuration list for PBXNativeTarget "blesignal-cli-macos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2C52A982143B53900C05FC7 /* Debug */,
