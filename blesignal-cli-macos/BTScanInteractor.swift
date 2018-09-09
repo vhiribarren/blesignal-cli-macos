@@ -41,7 +41,7 @@ class BTScanInteractor : NSObject, CBCentralManagerDelegate{
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        let time = Int(Date().timeIntervalSince1970)
+        let time = Date().timeIntervalSince1970
         printStdout("\(time)\t\(peripheral.identifier)\t\(RSSI)\t\(peripheral.name ?? "")")
     }
     
